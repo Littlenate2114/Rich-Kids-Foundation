@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<title>Rich Kids Foundation</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+	</head>
+	<body>
+		<div class='rkf'>
+			<img src='sam.png' width='100px;' height='auto'></img>
+			<div class='container'>
+				<h1>Welcome, Just A Few More Steps!</h1>
+				<p>The following is agreement contract that you must sign in order to take part in the Rich Kids Foundation.</p>
+				<p>By signing this contract you agree and understand the following : </p>
+				<p>You understand that Sam will be in control of your investment money and you give him permission to invest and withdraw your money after a whole group discussion.</p>
+				<p>You understand that it is possible to lose money and that there is no guarantee you will make any. YOU MAY LOSE ALL YOUR MONEY.</p>
+				<p>You are required to invest the same amount of money as the others and you will sign this contract at every investment. You will enter your correct investment amount below and upload a screenshot to the snapchat group.</p>
+				<p>Sam will inform you once everyday on the current account balance, you understand that when it comes time for deposit the total amount will be divided equally.</p>
+				<p>There is no tax fee or any other fees apart from fees required by acorns and or bitcoin.com.au</p>
+				<p>While Sam is in control of your investment money he to agrees signs this contract. Any investment money will be only invested in the discussed crypto or stocks.</p>
+				<input type="text" id='name' placeholder="Full Name : "></br> 
+				<input type="text" id='amount' placeholder="Investment Amount :"></br> 
+				<a id='btn'>Accept and Agree To Contract.</a></br>
+			</div>
+		</div>		
+			<div class="done">
+					<img src="icon.png" style="width:75px;height:auto;"></img>
+				<div class='donein'>
+					<h1 id="fname">x</h1>
+					<h1>-$</h1>
+					<h1 id='famount'>x</h1>
+				</div>
+				<p style="color:white;margin-top:10px;">Accepts and Agrees To Contract.</p>
+			</div>
+	</body>
+	<style>
+		.done{
+			width:100%;
+			background-color:#3742fa;
+			height:400px;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			text-align:center;
+			flex-direction:column;
+			position:relative;
+		}
+		.donein{
+			display:flex;
+		}
+		.donein h1 {
+			color:white;
+		}
+		.done img{
+			position:relative;
+			bottom:20px;
+		}
+		*{
+			margin:0px;
+			padding:0px;
+			font-family: 'Raleway', sans-serif;
+		}
+		.rkf{
+			width:100%;
+			height:auto;
+			background-color:#ecf0f1;
+			display:flex;
+			position:relative;
+			padding-bottom:40px;
+		}
+		.rkf img{
+			position:absolute;
+			left:0px;
+			top:0px;
+		}
+		.container{
+			margin-top:20px;
+			margin-left:100px;
+			box-sizing:border-box;
+		}
+		.container h1, p, input{
+			margin-bottom:10px;
+		}
+		a{
+			background-color:#2ecc71;
+			color:white;
+			padding:10px 15px;
+			position:relative;
+			top:10px;	
+			cursor:pointer;
+		}
+		input{
+			padding:10px;
+			width:255px;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$('.done').hide();
+		$('#btn').click(function(){
+		$('.done').slideDown(500);
+		var name = $('#name').val();		
+		var amount = $('#amount').val();		
+		$('#fname').text(name);
+		$('#famount').text(amount);
+		});
+	</script>
+</html>
