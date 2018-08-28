@@ -123,3 +123,9 @@ body{
 		margin-bottom:30px;
 	}
 }
+.per{
+	position:absolute;
+	bottom:65px;
+	right:5px;
+	font-size:15px;
+}
