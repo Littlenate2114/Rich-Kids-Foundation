@@ -15,7 +15,7 @@
 		<div class="num">
 			<h1 class="fac">Loading...</h1>
 			<a href="#">Make Investment</a>
-			<p class="per">-5%</p>
+			<p class="per">Caclulating...</p>
 		</div>
 		<h1 class="diver">Portfolio Diversity</h1>
 		<div class="types">
@@ -64,6 +64,12 @@ While Sam is in control of your investment money he to agrees signs this contrac
 	var calcper = ((result - 100)/100 * 100)
 	var fical = calcper.toString().substring(0,6);
 	$(".per").html(fical+"%");
+  //alert(fical.charAt(0));
+  if(fical.charAt(0) == "-"){
+ 	 $(".per").css("color", "red");
+  }else{
+  	$(".per").css("color", "green");
+  }
     });
     </script>
 </html>
