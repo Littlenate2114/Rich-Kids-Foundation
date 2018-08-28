@@ -1,0 +1,125 @@
+*{
+	padding:0px;
+	margin:0px;
+	border:0px;
+	font-family: 'Raleway', sans-serif;
+}
+.bal{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	flex-direction:column;
+	width:100%;
+	height:400px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4e00ea+21,ad00f2+90 */
+background: #4e00ea; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #4e00ea 21%, #ad00f2 90%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #4e00ea 21%,#ad00f2 90%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #4e00ea 21%,#ad00f2 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e00ea', endColorstr='#ad00f2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.bal h1{
+	font-size:50px;
+	color:white;
+	text-shadow:0px 0px 25px rgba(0,0,0,0.2);
+}
+.num{
+	background-color:white;
+	border-radius:3px;
+	box-shadow:0px 0px 25px rgba(0,0,0,0.3);
+	padding:30px;
+	box-sizing:border-box;
+	margin:0px auto;
+	position:relative;
+	top:-65px;
+	left:0px;
+	right:0px;
+	width:300px;
+	text-align:center;
+	color:#3a3a3a;
+	padding-bottom:80px;
+}
+body{
+	background-color:#fdfdfd;
+}
+.bal img{
+	margin-bottom:20px;
+}
+.rules{
+	width:100%;
+	padding:30px;
+	text-align:center;
+	box-sizing:border-box;
+}
+.rules p{
+	line-height:40px;
+	color:#828282;
+	font-size:25px;
+}
+.num a{
+	color:white;
+	background-color:#1bce8c;
+	box-sizing:border-box;
+	text-decoration:none;
+	padding-top:17px;
+	font-size:20px;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	height:60px;
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+	transition:all 0.3s;
+}
+.num a:hover{
+	background-color:#1fc588;
+	color:white;
+}
+.types{
+	width:900px;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	box-sizing:border-box;
+	padding:30px;
+	margin:0px auto;
+}
+.types img{
+	width:75px;
+}
+.type h1{
+	margin-top:20px;
+	font-size:17px;
+	color:#525252;
+}
+.type{
+	display:flex;
+	border-right:2px solid #e8e8e8;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	flex-direction:column;
+}
+.diver{
+	text-align:center;
+	margin-bottom:40px;
+	font-size:23px;
+	color:#313131;
+}
+.type h2{
+	margin-top:10px;
+	font-size:17px;
+}
+@media only screen and (max-width: 921px) {
+	.types{
+		width:100%;
+		grid-template-columns:1fr;
+	}
+	.type{
+		border-right:2px solid transparent;
+		border-bottom:2px solid #e8e8e8;
+		padding-bottom:20px;
+		margin-bottom:30px;
+	}
+}

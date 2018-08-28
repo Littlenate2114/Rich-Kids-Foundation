@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+		<meta name="viewport" content="width=device-width" />
+		<title>Index</title>
+	</head>
+	<body>
+		<div class="bal">
+			<img src="bitcoin.png" width="75px" alt=""/>
+			<h1>RKF Smart Fund Wallet</h1>
+		</div>
+		<div class="num">
+			<h1 class="fac">Loading...</h1>
+			<a href="#">Make Investment</a>
+		</div>
+		<h1 class="diver">Portfolio Diversity</h1>
+		<div class="types">
+			<div class="type">
+				<img src="btc.png" alt=""/>	
+				<h1>Bitcoin</h1>
+				<h2>95%</h2>
+			</div>	
+			<div class="type">
+				<img src="alt.png" alt=""/>	
+				<h1>Altcoins</h1>
+				<h2>5%</h2>
+			</div>	
+			<div class="type" style="border-right:0px;">
+				<img src="stock.png" alt=""/>	
+				<h1>Stocks</h1>
+				<h2>0%</h2>
+			</div>	
+		</div>
+		<div class="rules">
+			<p>The following is agreement contract that you must sign in order to take part in the Rich Kids Foundation.
+
+By signing this contract you agree and understand the following :
+
+You understand that Sam will be in control of your investment money and you give him permission to invest and withdraw your money after a whole group discussion.
+
+You understand that it is possible to lose money and that there is no guarantee you will make any. YOU MAY LOSE ALL YOUR MONEY.
+
+You are required to invest the same amount of money as the others and you will sign this contract at every investment. You will enter your correct investment amount below and upload a screenshot to the snapchat group.
+
+Sam will inform you once everyday on the current account balance, you understand that when it comes time for dep osit the total amount will be divided equally.
+
+There is no tax fee or any other fees apart from fees required by acorns and or bitcoin.com.au
+
+While Sam is in control of your investment money he to agrees signs this contract. Any investment money will be only invested in the discussed crypto or stocks.</p>	
+		</div>
+	</body>
+	    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	 <script>
+    $.getJSON('https://blockchain.info/ticker', function(data) {
+
+        var text = `${data.AUD.last} `
+	var result = text * 0.00758
+	var cut = result.toString().substring(0,7);
+		$(".fac").html("$"+cut);
+    });
+    </script>
+</html>
