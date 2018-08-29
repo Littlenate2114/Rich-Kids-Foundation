@@ -5,17 +5,21 @@
 		<link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
 		<meta name="viewport" content="width=device-width" />
-		<title>RKF Smart Fund</title>
+		<title>Index</title>
 	</head>
 	<body>
 		<div class="bal">
 			<img src="bitcoin.png" width="75px" alt=""/>
 			<h1>RKF Smart Fund Wallet</h1>
+			<h2 style="font-size:20px;color:white;margin-top:5px;z-index:9999;font-weight:700;">No Verification, No Limits</h2>
 		</div>
 		<div class="num">
 			<h1 class="fac">Loading...</h1>
 			<a href="https://paypal.me/fiat2crypto">Make Investment</a>
-			<p class="per">Caclulating...</p>
+			<div class="holder">
+				<p class="amount">BTC 0.00758</p>
+				<p class="per">-5%</p>
+			</div>
 		</div>
 		<h1 class="diver">Portfolio Diversity</h1>
 		<div class="types">
@@ -64,9 +68,8 @@ While Sam is in control of your investment money he to agrees signs this contrac
 	var calcper = ((result - 100)/100 * 100)
 	var fical = calcper.toString().substring(0,6);
 	$(".per").html(fical+"%");
-  //alert(fical.charAt(0));
-  if(fical.charAt(0) == "-"){
- 	 $(".per").css("color", "red");
+	if(fical.charAt(0) == "-"){
+ 	 $(".per").css("color", "#c11230");
   }else{
   	$(".per").css("color", "green");
   }

@@ -10,6 +10,7 @@
 	align-items:center;
 	text-align:center;
 	flex-direction:column;
+	position:relative;
 	width:100%;
 	height:400px;
 	background: linear-gradient(50deg, #5debc6, #5d5dcf, #f81233, #12f868);
@@ -36,8 +37,18 @@ animation: AnimationName 31s ease infinite;
 }
 .bal h1{
 	font-size:50px;
+	z-index:999999;
 	color:white;
 	text-shadow:0px 0px 25px rgba(0,0,0,0.2);
+}
+.bal::before{
+	content:'';
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.2);
+	top:0px;
+	left:0px;
 }
 .num{
 	background-color:white;
@@ -53,13 +64,14 @@ animation: AnimationName 31s ease infinite;
 	width:300px;
 	text-align:center;
 	color:#3a3a3a;
-	padding-bottom:80px;
+	padding-bottom:110px;
 }
 body{
 	background-color:#fdfdfd;
 }
 .bal img{
 	margin-bottom:20px;
+	z-index:999999;
 }
 .rules{
 	width:100%;
@@ -74,7 +86,7 @@ body{
 }
 .num a{
 	color:white;
-	background-color:#1bce8c;
+	background-color:#22b981;
 	box-sizing:border-box;
 	text-decoration:none;
 	padding-top:17px;
@@ -83,6 +95,8 @@ body{
 	bottom:0px;
 	left:0px;
 	width:100%;
+	font-weight:700;
+	letter-spacing:0.5px;
 	height:60px;
 	border-bottom-left-radius:3px;
 	border-bottom-right-radius:3px;
@@ -138,9 +152,19 @@ body{
 		margin-bottom:30px;
 	}
 }
-.per{
+.holder{
 	position:absolute;
-	bottom:67px;
-	right:7px;
-	font-size:13px;
+	bottom:60px;
+	left:0px;
+	font-size:15px;
+	width:100%;
+	background-color:#f7f7f7;
+	box-sizing:border-box;
+	padding:10px;
+}
+.holder .amount{
+	float:left;
+}
+.holder .per{
+	float:right;
 }
