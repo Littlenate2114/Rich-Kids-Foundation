@@ -12,12 +12,27 @@
 	flex-direction:column;
 	width:100%;
 	height:400px;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4e00ea+21,ad00f2+90 */
-background: #4e00ea; /* Old browsers */
-background: -moz-linear-gradient(-45deg, #4e00ea 21%, #ad00f2 90%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, #4e00ea 21%,#ad00f2 90%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, #4e00ea 21%,#ad00f2 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e00ea', endColorstr='#ad00f2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: linear-gradient(50deg, #5debc6, #5d5dcf, #f81233, #12f868);
+background-size: 800% 800%;
+
+-webkit-animation: AnimationName 31s ease infinite;
+-moz-animation: AnimationName 31s ease infinite;
+animation: AnimationName 31s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:68% 0%}
+    50%{background-position:33% 100%}
+    100%{background-position:68% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:68% 0%}
+    50%{background-position:33% 100%}
+    100%{background-position:68% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:68% 0%}
+    50%{background-position:33% 100%}
+    100%{background-position:68% 0%}
 }
 .bal h1{
 	font-size:50px;
