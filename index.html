@@ -17,7 +17,7 @@
 			<h1 class="fac">Loading...</h1>
 			<a href="https://paypal.me/fiat2crypto">Make Investment</a>
 			<div class="holder">
-				<p class="amount">BTC 0.00758</p>
+				<p class="amount">BTC 0.00825</p>
 				<p class="per">-5%</p>
 			</div>
 		</div>
@@ -62,7 +62,7 @@ While Sam is in control of your investment money he to agrees signs this contrac
     $.getJSON('https://blockchain.info/ticker', function(data) {
 
         var text = `${data.AUD.last} `
-	var result = text * 0.00758
+	var result = text * 0.00825
 	var cut = result.toString().substring(0,7);
 		$(".fac").html("$"+cut);
 	var calcper = ((result - 100)/100 * 100)
