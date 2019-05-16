@@ -62,7 +62,7 @@ While Sam is in control of your investment money he to agrees signs this contrac
     $.getJSON('https://blockchain.info/ticker', function(data) {
 
         var text = `${data.AUD.last} `
-	var result = text * 0.00825
+	var result = text * 0.00840
 	var cut = result.toString().substring(0,7);
 		$(".fac").html("$"+cut);
 	var calcper = ((result - 100)/100 * 100)
